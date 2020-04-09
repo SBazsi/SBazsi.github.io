@@ -50,9 +50,10 @@ header {
     height: 600px;
     object-fit: cover;
     position: relative;
+    filter: blur(10px);
   }
   #anakin:hover {
-    filter: blur(10px);
+    filter: blur(0px);
   }
   #myname,
   p2,
