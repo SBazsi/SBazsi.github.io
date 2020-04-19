@@ -52,10 +52,11 @@ let btntorles = document.getElementById('torles');
 let btnkezdo = document.getElementById('kezdo');
 let btnhalado = document.getElementById('halado');
 btntorles.disabled = true;
-
+let szoveg = document.getElementsByClassName('szoveg');
 
 
 function kezdoedzes() {
+    szoveg.style.visibility = "hidden";
     table.style.visibility = "visible";
     elsonap = document.getElementsByClassName('kezdo');
     for (let i = 0; i < elsonap.length; i++) {
@@ -75,6 +76,7 @@ function kezdoedzes() {
 }
 
 function haladoedzes() {
+    szoveg.style.visibility = "hidden";
     table.style.visibility = "visible";
     elsonap = document.getElementsByClassName('halado');
     for (let i = 0; i < elsonap.length; i++) {
@@ -93,6 +95,7 @@ function haladoedzes() {
 }
 
 function torles() {
+    szoveg.style.visibility = "visible";
     table.style.visibility = "hidden";
     for (let i = 0; i < elsonap.length; i++) {
         const element = elsonap[i];
