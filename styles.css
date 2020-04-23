@@ -1,41 +1,109 @@
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: whitesmoke;
+  text-shadow:2px 5px 2px black;
+}
+#bcode {
+  width: 10%;
+  position: relative;
 }
 
-table {
+
+.topnav a {
+  color: #f2f2f2;
   text-align: center;
-  visibility: hidden;
-  position: relative;
-  box-shadow: 0px 0px 10px 3px rgb(245, 241, 241);
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(23, 206, 23);
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
-td {
-  max-width: 10%;
-  height: fit-content;
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-.first {
-  font-weight: bold;
+
+.topnav a.active {
+  background-color: rgb(23, 122, 26);
+  color: white;
 }
+
+header {
+  background-color: rgb(8, 8, 104, 0.4);
+  padding: 10px;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+table {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 .szoveg {
   color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-table, th, td {
+th, td {
   border: 1px solid black;
-  border-collapse: collapse;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px;
+  background-color: blue;
 }
 body {
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: linear-gradient(to bottom , rgb(8, 8, 104), rgb(32, 32, 250));
+  
 }
 .buttons {
-  margin: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
   display: inline-block;
   font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.randomszamok {
+  margin-top: 100px;
+}
+.randomedzes {
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+#random, #kezdo, #halado {
+  background: rgb(35, 83, 241);
+  font-size: 25px;
+  color: whitesmoke;
+  border-radius: 15px;
+  margin-right: 55px;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  justify-content: space-evenly;
+  border: 0;
+  padding: 5px 10px;
+}
+#random:hover, #kezdo:hover, #halado:hover {
+  background: rgb(7, 7, 143);
+  box-shadow: 0px 0px 5px white;
 }
 
 .tablecontainer {
@@ -44,35 +112,5 @@ body {
   margin-top: 20px;
   text-align: center;
 }
-#kezdo, #halado, #torles {
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px 8px gray;
-  margin: 0;
-  border: 0;
-}
-#kezdo:hover, #halado:hover, #torles:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 8px 8px black;
-}
-#kezdo {
-  background-color: rgb(49, 196, 49);
-  color: white;
-  margin-right: 20px;
-}
-#halado {
-  background-color: green;
-  color: white;
-  margin-right: 20px;
-}
-#torles {
-  background-color: red;
-  color: white;
-}
-html {
-  height: 100%;
-}
-body {
-  background-repeat: no-repeat;
-  background: linear-gradient(rgb(4, 80, 4), rgb(22, 22, 22));
-}
+
+

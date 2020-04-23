@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodycode online</title>
+    <title>Napi random edzés</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -14,30 +14,24 @@
         <h1>Balázs online edzései</h1>
         <div class="topnav">
             <a class="active" href="index.html">Kezdőoldal</a>
-            <a href="random.html" >Random edzés</a>
+            <a href="random.html">Random edzés</a>
             <a href="kezdo.html">Kezdő edzés</a>
             <a href="halado.html">Haladó edzés</a>
           </div>
     </header>
-    <div class="szoveg">
-        <br><br>
-        <h2>Üdvözöllek kedves edzeni vágyó!</h2>
-        <br>
-        <h3>Válaszd ki kérlek hogy milyen edzést szeretnél ma csinálni! </h3>
-       
-       </div>
-    <div class="buttons">
-        <button id="random" onclick="location.href = 'random.html'" >Random napi edzés</button>
-        <button id="kezdo" onclick="location.href = 'kezdo.html'">Kezdő edzés</button>
-        <button id="halado" onclick="location.href = 'halado.html'">Haladó edzés</button>
-    </div>
-   
-    <div class="tablecontainer">
-      <p></p>
-    
 
+    <h1>Napi random edzés</h1>
+    
+    <div class="randomedzes">
+        <p>Ezen az oldalon 1 random edzést találsz. Ha nagyon unatkozol, vagy csak két edzésnap között vagy akkor itt próbára teheted magad!</p>
+        <div class="randomszamok">
+    <p id="randomkor"><strong> Ennyi kört csinálj a gyakorlatokból:</strong> </p>
+    <p id="randomismetles"><strong> Ennyi ismétlést csinálj minden gyakorlatból:</strong> </p>
+    <p id="randomgyak"><strong> Ezekből a gyakorlatokból:</strong> <br><br></p>
+</div>
 </div>
 
+    
     <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
