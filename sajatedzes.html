@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saját edzés</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        
+        <img src="BodyCode - Profil png.png" alt="" id="bcode">
+        <h1>Balázs online edzései</h1>
+        <div class="topnav">
+            <a class="active" href="index.html">Kezdőoldal</a>
+            <a href="random.html" >Random edzés</a>
+            <a href="kezdo.html">Kezdő edzés</a>
+            <a href="halado.html">Haladó edzés</a>
+            <a href="sajatedzes.html">Saját edzésterv</a>
+            <a href="ellenorzes.html">Edzésterv ellenőrzés</a>
+          </div>
+    </header>
+    <div class="szoveg">
+    <h1>Saját edzéstervet szeretnék</h1>
+    <h4>Van olyan eszközöd otthon amit szeretnél használni? Személyre szabott edzést szeretnél? </h4>
+   <p>Most lehetőséged van arra hogy teljesen személyre szabott edzésterved legyen. Ehhez nem kell mást tenned, csak kitölteni az űrlapot az adataiddal és egy-két napon belül már 
+       kézhez is kaphatod a saját edzéstervedet. 
+   </p>
+</div>
+
+<div class="container">
+    <form accept-charset="ISO-8859-2">
+        <fieldset>
+            <legend>Saját adatok: </legend>
+        <label for="name" autofocus>Név: </label><br>
+        <input type="text" id="name" placeholder="Add meg a neved..." required><br><br>
+        <label for="email">E-mail: </label><br>
+        <input type="email" id="email" placeholder="Add meg az email címed... " required><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Edzés adatok: </legend>
+        <label for="heti" >Heti hány napot szeretnél edzeni?</label>
+        <input type="number" min="1" max="7" id="heti" value="3" required><br><br>
+        <label for="">Hol fogsz edzeni?</label><br>
+        <input type="text" id="hol" placeholder="Lakásban, kertben, szabadban, stb..." required>
+    </fieldset>
+
+<fieldset>
+    <legend>Gyakorlatok:</legend>
+    <label for="gyakorlatok">Milyen gyakorlatot szeretnél mindenképp az edzéstervben?</label>
+    <textarea name="gyakorlatok" id="gyakorlatok" cols="50" rows="4" placeholder="Nem kötelező kitölteni..."></textarea><br><br>
+    <label for="gyakorlatoknem">Milyen gyakorlatot NEM szeretnél az edzéstervben?</label>
+    <textarea name="gyakorlatoknem" id="gyakorlatoknem" cols="50" rows="4" placeholder="Nem kötelező kitölteni..."></textarea>
+</fieldset>
+
+    <fieldset>
+        <legend>Eszközök: </legend><br>
+        <label for="area">Milyen eszközeid vannak otthon?</label><br><br>
+        <textarea name="area" id="area" wrap="hard" cols="50" rows="10" placeholder="Eszközeidet vesszővel elválasztva add meg kérlek! &#10;pl:
+         &#10;kézisúlyzó 3kg 2db,  &#10;kettlebell 20kg 1 db" required></textarea><br>
+    </fieldset>
+   
+    <button type="submit" class="submit" onclick="sajatedzes()">Elküldés</button>
+</form>
+</div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

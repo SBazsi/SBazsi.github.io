@@ -24,5 +24,27 @@ let gyakorlatok = ["Goblet guggolás", "Egylábas dobozra guggolás", "Bolgár g
     
    
   } 
+  
+  function sajatedzes(){
+    let name = $('#name').val();
+    let email = $('#email').val();
+    let message = $('#area').val();
+    let heti = $('#heti').val();
+    let hol = $('#hol').val();
+    let gyakorlatok = $('#gyakorlatok').val();
+    let gyakorlatoknem = $('#gyakorlatoknem').val();
+      if (name !=="" && email !== "" && message !== "" && hol !=="") {
+        window.location.href = 'mailto:balazs.seres86@gmail.com?subject=Saját%20edzésterv&body=%0D%0ANév:%20' +name +'%20%0D%0AEmail:%20' +email+ 
+    '%0D%0AHeti%20edzésnapszám:%20' + heti
+      + '%0D%0AHol%20fogsz%20edzeni:%20' + hol
+      + '%0D%0AMilyen%20gyakorlatok%20legyenek%20benne:%20' + gyakorlatok
+      + '%0D%0AMik%20ne%20legyenek%20benne:%20' + gyakorlatoknem 
+    +'%20%0D%0AEszközlista:%20' + message;
+      } else {
+        alert("Valami még hiányzik!");
+      }
+      
+   
+}
  
  
