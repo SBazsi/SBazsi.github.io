@@ -33,7 +33,7 @@ let gyakorlatok = ["Goblet guggolás", "Egylábas dobozra guggolás", "Bolgár g
     let hol = $('#hol').val();
     let gyakorlatok = $('#gyakorlatok').val();
     let gyakorlatoknem = $('#gyakorlatoknem').val();
-      if (name !=="" && email !== "" && message !== "" && hol !=="") {
+      if (name !=="" && email !== "" && message !== "" && hol !=="" && heti <= 7) {
         window.location.href = 'mailto:balazs.seres86@gmail.com?subject=Saját%20edzésterv&body=%0D%0ANév:%20' +name +'%20%0D%0AEmail:%20' +email+ 
     '%0D%0AHeti%20edzésnapszám:%20' + heti
       + '%0D%0AHol%20fogsz%20edzeni:%20' + hol
