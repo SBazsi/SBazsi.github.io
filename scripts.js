@@ -43,8 +43,17 @@ let gyakorlatok = ["Goblet guggolás", "Egylábas dobozra guggolás", "Bolgár g
       } else {
         alert("Valami még hiányzik!");
       }
-      
-   
+}
+
+function ellenorzes(){
+  let name = $('#ellname').val();
+  let email = $('#ellemail').val();
+  if (name !== "" && email !== "") {
+    window.location.href = 'mailto:balazs.seres86@gmail.com?subject=Edzéstervem%20ellenőrzése%20' + name
+  } else {
+    alert("Valami még hiányzik!");
+  }
+
 }
  
  
