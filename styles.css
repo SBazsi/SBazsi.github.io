@@ -90,15 +90,16 @@ fieldset {
   overflow: auto;
 }
 .segment:hover {
-  background-color: rgb(13, 13, 138);
+  background-color: #ddd;
   box-shadow: 4px 6px 7px black;
   text-align: center;
-  width: 75%;
+  width: 55%;
 }
 .ikon p1 {
   font-weight: bold;
   font-size: 23px;
   color: white;
+  text-shadow: 1px 1px 2px black;
 }
 .ikon a, .ikon p{
   color: #ddd;
@@ -109,6 +110,7 @@ fieldset {
 .ikon p {
   padding: 0;
   font-size: 18px;
+  color: black;
 }
 legend {
   font-weight: bold;
@@ -221,6 +223,7 @@ body {
   position: absolute;
   opacity: 0.6;
   left: 10%;
+  top: 20%;
   z-index: -1;
 }
 
