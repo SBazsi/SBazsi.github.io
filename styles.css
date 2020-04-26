@@ -54,6 +54,7 @@ table {
   border-collapse: collapse;
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  opacity: 0.7;
 }
 fieldset {
   width: 400px;
@@ -208,12 +209,18 @@ body {
 }
 .ikon {
   float: left;
+  max-width: 400px;
 }
 .kepek {
   float: right;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: 10px;
 }
-
+.jelek {
+  position: absolute;
+  opacity: 0.6;
+  left: 10%;
+  z-index: -1;
+}
 
