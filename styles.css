@@ -72,6 +72,7 @@ fieldset {
   margin-bottom: 150px;
 }
 .segment {
+  cursor: pointer;
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: left;
@@ -93,8 +94,10 @@ fieldset {
   text-align: center;
   width: 75%;
 }
-.ikon a {
+.ikon p1 {
   font-weight: bold;
+  font-size: 23px;
+  color: white;
 }
 .ikon a, .ikon p{
   color: #ddd;
